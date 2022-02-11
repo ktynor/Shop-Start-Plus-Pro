@@ -33,12 +33,8 @@ public class ProductService {
 
     @EventListener(ApplicationContextEvent.class)
     public void get() {
-
-
         System.out.println("Basket product list: " + basket.getProductList());
         System.out.println("Basket total price: PLN " + String.format("%.2f", basket.getTotalPrice()));
-        System.out.println("Basket total price with VAT: PLN " + String.format("%.2f", basket.getTotalPriceWithVAT()));
-        System.out.println("Basket total price with VAT and discount: PLN " + String.format("%.2f", basket.getTotalPriceWithVatAndDiscount()));
 
     }
 
